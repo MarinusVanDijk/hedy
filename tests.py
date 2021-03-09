@@ -34,7 +34,7 @@ class TestsHelperFunctions(unittest.TestCase):
         invalid_command = ""
 
         closest = hedy.closest_command(invalid_command, ['ask', 'print', 'echo'])
-        self.assertEqual(closest, 'ask')
+        self.assertEqual(closest, 'assk')
 
         invalid_command = "print"
         closest = hedy.closest_command(invalid_command, ['print', 'ask', 'echo'])
